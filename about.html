@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="django html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us | Pure Plates</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background: #f9f9f9;
+          color: #333;
+          line-height: 1.6;
+        }
+    
+        .about-section {
+          background: #fff;
+          padding: 80px 30px;
+        }
+    
+        .about-container {
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 40px;
+        }
+    
+        .about-text {
+          flex: 1;
+          min-width: 300px;
+        }
+    
+        .about-text h2 {
+          font-size: 2.5rem;
+          color: #e52e71;
+          margin-bottom: 20px;
+        }
+    
+        .about-text p {
+          font-size: 1.1rem;
+          color: #444;
+          margin-bottom: 15px;
+        }
+    
+        .about-image {
+          flex: 1;
+          min-width: 300px;
+        }
+    
+        .about-image img {
+          width: 100%;
+          border-radius: 12px;
+          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Responsive Design */
+        @media (max-width: 768px) {
+          .about-container {
+            flex-direction: column;
+            text-align: center;
+          }
+    
+          .about-text, .about-image {
+            width: 100%;
+          }
+    
+          .about-text h2 {
+            font-size: 2rem;
+          }
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="about-container">
+          <div class="about-text" data-aos="fade-right">
+            <h2>About Pure Plates</h2>
+            <p>
+              At Pure Plates, we believe in delivering fresh, flavorful meals made with love and the finest ingredients.
+              Our mission is to make healthy eating convenient, affordable, and delicious—because you deserve better food.
+            </p>
+            <p>
+              Whether you're grabbing a quick lunch or fueling your fitness, our menu is tailored to nourish every lifestyle.
+              Join us and taste the difference of real food.
+            </p>
+          </div>
+    
+          <div class="about-image" data-aos="fade-left">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Pure Plates Fresh Food" />
+          </div>
+        </div>
+      </section>
+    
+      <!-- AOS Script -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>
